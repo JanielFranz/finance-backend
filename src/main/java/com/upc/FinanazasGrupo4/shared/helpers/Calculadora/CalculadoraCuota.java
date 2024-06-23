@@ -241,6 +241,7 @@ public class CalculadoraCuota {
         );
 
         return ultimaCuota;
+        //return null;
     }
 
     public static ColumnasCronogramaPago instanciarColumnasCronogramaPago(CreateEntryDataCronograma createEntryDataCronograma, VariablesIntermediasCalculoCronograma variablesIntermediasCalculoCronograma){

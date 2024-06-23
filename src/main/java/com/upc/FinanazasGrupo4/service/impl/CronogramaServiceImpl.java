@@ -257,7 +257,7 @@ public class CronogramaServiceImpl implements CronogramaService {
 
         double mitadCuotasTotales= cuotasTotales/2;
 
-        if(createEntryDataCronograma.getPlazoDeGracia().isEmpty()){
+        /*if(createEntryDataCronograma.getPlazoDeGracia().isEmpty()){
             //Si no se ingresa el plazo de gracia, se devuelve un error
             throw new ValidationException("No se ingreso el plazo de gracia");
         }
@@ -270,7 +270,7 @@ public class CronogramaServiceImpl implements CronogramaService {
             throw new ValidationException("" +
                     "El plazo de gracia no puede ser mayor a la mitad de las cuotas totales dado la frecuencia de pago" +
                     ". Cuotas totales: "+(int)cuotasTotales+" , mitad de cuotas totales: "+ (int)mitadCuotasTotales+", frecuencia de pago elegida: "+ createEntryDataCronograma.getFrecuenciaPago().toUpperCase());
-        }
+        }*/
 
     }
     private void validacionesCasoTasaNominal(CreateEntryDataCronograma createEntryDataCronograma){
@@ -291,24 +291,24 @@ public class CronogramaServiceImpl implements CronogramaService {
 
     private void validacionesCuotaInicial(CreateEntryDataCronograma createEntryDataCronograma){
 
-        int porcentajeMinimoCuotaInicial = 20;
+        /*int porcentajeMinimoCuotaInicial = 20;
         int porcentajeMaximoCuotaInicial = 30;
 
         if(createEntryDataCronograma.getPorcentajeCuotaInicial()<porcentajeMinimoCuotaInicial || createEntryDataCronograma.getPorcentajeCuotaInicial()>porcentajeMaximoCuotaInicial){
             //Si no se ingresa la cuota inicial, se devuelve un error
             throw new ValidationException("El porcentaje de la cuota inicial debe ser como mínimo "+porcentajeMinimoCuotaInicial+"% y como máximo "+porcentajeMaximoCuotaInicial+"%");
-        }
+        }*/
     }
 
     private void validacionesCuotaFinal(CreateEntryDataCronograma createEntryDataCronograma){
 
-        int porcentajeMinimoCuotaFinal = 40;
+        /*int porcentajeMinimoCuotaFinal = 40;
         int porcentajeMaximoCuotaFinal = 50;
 
         if(createEntryDataCronograma.getPorcentajeCuotaFinal()<porcentajeMinimoCuotaFinal || createEntryDataCronograma.getPorcentajeCuotaFinal()>porcentajeMaximoCuotaFinal){
             //Si no se ingresa la cuota inicial, se devuelve un error
             throw new ValidationException("El porcentaje de la cuota final debe ser como mínimo "+porcentajeMinimoCuotaFinal+"% y como máximo "+porcentajeMaximoCuotaFinal+"%");
-        }
+        }*/
 
     }
 
